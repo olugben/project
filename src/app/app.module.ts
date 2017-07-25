@@ -21,6 +21,7 @@ import {DropdownDirective} from './shared/dropdown.directive';
 
 //service
 import {ShoppingListService} from './shopping-list/shopping-list.service';
+import {RecipeService} from './recipes/recipe.service';
 
 
 @NgModule({
@@ -44,7 +45,7 @@ import {ShoppingListService} from './shopping-list/shopping-list.service';
     ReactiveFormsModule
 
   ],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
