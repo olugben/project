@@ -1,6 +1,6 @@
 //angular
 import {FormControl} from '@angular/forms';
-import {Observable} from "rxjs/Observable";
+import {Observable} from 'rxjs/Observable';
 
 
 export class ForbiddenRecipeNameValidator {
