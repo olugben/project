@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {DataStoreServerService} from '../shared/dataStoreServer.service';
+import {DataStoreServerService} from '../../shared/dataStoreServer.service';
 import {Response} from '@angular/http';
-import {RecipeService} from '../recipes/recipe.service';
+import {AuthService} from '../../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ import {RecipeService} from '../recipes/recipe.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private server: DataStoreServerService) {}
+  constructor(private server: DataStoreServerService, private authService: AuthService) {}
 
   saveToServer() {
     this.server.pushRecipeToServer().subscribe(
@@ -20,5 +20,9 @@ export class HeaderComponent {
 
   fetchFromServer() {
     this.server.fetchRecipeFromServer();
+  }
+
+  onLogOut() {
+    this.authService.logout();
   }
 }

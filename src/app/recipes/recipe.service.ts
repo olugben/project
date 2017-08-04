@@ -16,9 +16,9 @@ export class RecipeService {
 
   constructor(private slService: ShoppingListService) {
     this.recipes = [
-      new Recipe('aafood', 'good', 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg', [new Ingredient('meat', 1), new Ingredient('vege', 2)]),
-      new Recipe('ddfood', 'good', 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg', [new Ingredient('meat', 2), new Ingredient('vege', 2)]),
-      new Recipe('ssfood', 'good', 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg', [new Ingredient('meat', 3), new Ingredient('vege', 2)])
+      new Recipe('aafood', 'good', 'https://upload.wikimedia.org/wikipedia/commons/4/40/Assorted_dried_fishes.JPG', [new Ingredient('meat', 1), new Ingredient('vege', 2)]),
+      new Recipe('ddfood', 'good', 'https://upload.wikimedia.org/wikipedia/commons/4/40/Assorted_dried_fishes.JPG', [new Ingredient('meat', 2), new Ingredient('vege', 2)]),
+      new Recipe('ssfood', 'good', 'https://upload.wikimedia.org/wikipedia/commons/4/40/Assorted_dried_fishes.JPG', [new Ingredient('meat', 3), new Ingredient('vege', 2)])
     ];
   }
 
